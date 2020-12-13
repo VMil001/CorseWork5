@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="701.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.CabinetController">
+   <children>
+      <ImageView fitHeight="471.0" fitWidth="708.0" layoutX="-2.0">
+         <image>
+            <Image url="@imgs/3.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane blendMode="OVERLAY" layoutX="14.0" layoutY="14.0" prefHeight="60.0" prefWidth="336.0" style="-fx-background-color: #FF8000; -fx-background-radius: 15;">
+         <children>
+            <Label layoutX="7.0" layoutY="1.0" prefHeight="58.0" prefWidth="409.0" text="IEFaiport Ticket Office" textFill="#0d0d0d">
+               <font>
+                  <Font name="Century Gothic" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="UsernameTF" layoutX="539.0" layoutY="26.0" textFill="#b2d0ff">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="exitButton" blendMode="SRC_ATOP" layoutX="598.0" layoutY="20.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="89.0" style="-fx-background-color: #E0E6F8;" text="Назад">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Button>
+      <Button fx:id="dellFly" blendMode="SRC_ATOP" layoutX="254.0" layoutY="422.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="197.0" style="-fx-background-color: #E0E6F8;" text="Отменить полет">
+         <font>
+            <Font name="Century Gothic" size="18.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Button>
+      <TableView fx:id="tableBilet" layoutX="29.0" layoutY="84.0" prefHeight="282.0" prefWidth="635.0">
+        <columns>
+          <TableColumn fx:id="columnAirport" prefWidth="110.39999008178711" text="Аэропорт" />
+          <TableColumn fx:id="columnDate" prefWidth="121.59999084472656" text="Дата" />
+            <TableColumn fx:id="columnTimeOut" prefWidth="222.39996337890625" text="Время вылета" />
+            <TableColumn fx:id="columnTimeIn" prefWidth="178.4000244140625" text="Время прибытия" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

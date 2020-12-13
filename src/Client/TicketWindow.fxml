@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.TicketWindowController">
+    <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0">
+         <image>
+            <Image url="@imgs/4.jpg" />
+         </image>
+      </ImageView>
+        <Label layoutX="246.0" layoutY="17.0" text="БИЛЕТ">
+            <font>
+                <Font name="Century Gothic" size="41.0" />
+            </font>
+        </Label>
+        <Label layoutX="30.0" layoutY="116.0" text="Аэропорт прибытия:" textFill="WHITE">
+            <font>
+                <Font name="Century Gothic" size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="inAirLab" layoutX="195.0" layoutY="116.0" prefHeight="19.0" prefWidth="225.0" textFill="WHITE">
+            <font>
+                <Font name="Century Gothic" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="47.0" layoutY="151.0" prefHeight="19.0" prefWidth="99.0" text="Дата вылета:" textFill="WHITE">
+            <font>
+                <Font name="Century Gothic" size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="dateLab" layoutX="166.0" layoutY="151.0" prefHeight="19.0" prefWidth="225.0" textFill="WHITE">
+            <font>
+                <Font name="Century Gothic" size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="outTimeLab" layoutX="166.0" layoutY="191.0" prefHeight="19.0" prefWidth="225.0" textFill="WHITE">
+            <font>
+                <Font name="Century Gothic" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="42.0" layoutY="191.0" prefHeight="19.0" prefWidth="110.0" text="Время вылета:" textFill="WHITE">
+            <font>
+                <Font name="Century Gothic" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="41.0" layoutY="350.0" prefHeight="19.0" prefWidth="132.0" text="Время прибытия:" textFill="WHITE">
+            <font>
+                <Font name="Century Gothic" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="307.0" layoutY="353.0" prefHeight="19.0" prefWidth="46.0" text="Цена:" textFill="WHITE">
+            <font>
+                <Font name="Century Gothic" size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="inTimeLab" layoutX="173.0" layoutY="353.0" prefHeight="19.0" prefWidth="225.0" textFill="WHITE">
+            <font>
+                <Font name="Century Gothic" size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="fullPriceLab" layoutX="362.0" layoutY="353.0" prefHeight="19.0" prefWidth="225.0" textFill="WHITE">
+            <font>
+                <Font name="Century Gothic" size="15.0" />
+            </font>
+        </Label>
+        <Button fx:id="saveButton" layoutX="486.0" layoutY="354.0" mnemonicParsing="false" style="-fx-background-color: #FF8000;" text="Сохранить">
+            <font>
+                <Font name="Century Gothic" size="15.0" />
+            </font>
+            <effect>
+                <InnerShadow />
+            </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </Button>
+        <Label layoutX="491.0" layoutY="81.0" prefHeight="18.0" prefWidth="89.0" text="Пассажир:" textFill="WHITE">
+            <font>
+                <Font name="Century Gothic" size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="ClName" layoutX="474.0" layoutY="116.0" prefHeight="18.0" prefWidth="122.0" textFill="WHITE">
+            <font>
+                <Font name="Century Gothic" size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="ClSurname" layoutX="474.0" layoutY="134.0" prefHeight="18.0" prefWidth="122.0" textFill="WHITE">
+            <font>
+                <Font name="Century Gothic" size="14.0" />
+            </font>
+        </Label>
+      <Button fx:id="backButton" layoutX="30.0" layoutY="14.0" mnemonicParsing="false" prefHeight="10.0" prefWidth="67.0" style="-fx-background-color: #FF8000;" text="Назад">
+         <font>
+            <Font name="Century Gothic" size="15.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="exitButton" layoutX="521.0" layoutY="14.0" mnemonicParsing="false" prefHeight="10.0" prefWidth="67.0" style="-fx-background-color: #FF8000;" text="Выход">
+         <font>
+            <Font name="Century Gothic" size="15.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+    </children>
+</AnchorPane>
